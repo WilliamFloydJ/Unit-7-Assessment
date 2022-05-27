@@ -1,0 +1,8 @@
+The array's time scaled exponentially for the insert Double function. Whereas the append Double function scaled a lot more steadily.
+However even though insert Double grew a lot more drastically, anything smaller than medium size array was actually faster with the insert double array.
+This is rather negligible as the difference between speeds in the smaller arrays was in the Micro Seconds. As you can probably tell append double is quite a bit 
+better to use.
+
+This is because when you push a value to an array you're making that value have the newest value in the array. For example if a array had 5 items the push would make the new value be in spot 6.
+Where as if you unshift what you're doing is pushing all the present values one spot up and putting the new value at the beginning. For example if a array had 6 items the unshift would move the value at spot 1 to spot 2 and the value at spot 2 to spot 3, and so on.
+This of course at the beginning sounds easy, but over the course of a massive array such as the extra large array, you end up having to push so many values that the computer starts to take more and more time to process this request. 
